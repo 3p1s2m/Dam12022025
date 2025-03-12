@@ -3,10 +3,10 @@ public class GestorTienda {
 
 	
 
-		 public double calcularDescuento(double precio, int cantidadComprada) {
-		        if (cantidadComprada >= 10) {
+		 public double calcularDescuento(double precio, double porcentajeDescuento) {
+		        if (porcentajeDescuento >= 10) {
 		            return precio * 0.1;
-		        } else if (cantidadComprada >= 5) {
+		        } else if (porcentajeDescuento >= 5) {
 		            return precio * 0.05;
 		        }
 		        return 0;
@@ -30,6 +30,8 @@ public class GestorTienda {
 		        }
 		        return null;
 		    }
+
+		
 
 		
 			
